@@ -11,7 +11,7 @@ public class Main {
     }
     
     public static void analyzeFile() throws IOException {
-        File file = new File("Kazuu1211.txt");
+        File file = new File("wawarnn.txt");
         if (!file.exists()) {
             System.out.println("File not found: " + file.getAbsolutePath());
             return;
@@ -45,7 +45,7 @@ public class Main {
             }
         }
 
-        File newFile = new File("Kazuu1211Uppercase.txt");
+        File newFile = new File("wawarnn1211Uppercase.txt");
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(newFile))) {
             try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
                 String line;
