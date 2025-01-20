@@ -60,8 +60,7 @@ public class Calculator {
         }
 
         private double evaluateExpression(String expr) {
-            // Simple evaluation of the arithmetic expression
-            // You can use a library or implement a parser for more complex cases
+            
             return new ScriptEngineManager().getEngineByName("JavaScript").eval(expr);
         }
     }
